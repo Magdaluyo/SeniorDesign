@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  26 NOV 2018 22:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  28 NOV 2018 16:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -205,7 +205,10 @@ LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `bold'
 (Font)                  U/txexa/m/n --> U/txexa/bx/n on input line 129.
 LaTeX Info: Redefining \not on input line 1043.
 )
-(./master.aux (./abstract.aux) (./introduction.aux))
+(./master.aux (./abstract.aux) (./introduction.aux) (./requirements.aux)
+(./usecase.aux) (./activitydiagram.aux) (./architecture.aux)
+(./technologyused.aux) (./conceptualmodel.aux) (./testplan.aux)
+(./riskanalysis.aux) (./timeline.aux))
 \openout1 = `master.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 26.
@@ -366,24 +369,108 @@ Chapter 1.
 
 
 
-] (./master.aux (./abstract.aux) (./introduction.aux)) ) 
+]
+\openout2 = `requirements.aux'.
+
+ (./requirements.tex
+Chapter 2.
+) [2
+
+
+
+]
+\openout2 = `usecase.aux'.
+
+ (./usecase.tex
+Chapter 3.
+) [3
+
+
+
+]
+\openout2 = `activitydiagram.aux'.
+
+ (./activitydiagram.tex
+Chapter 4.
+) [4
+
+
+
+]
+\openout2 = `architecture.aux'.
+
+ (./architecture.tex
+Chapter 5.
+) [5
+
+
+
+]
+\openout2 = `technologyused.aux'.
+
+ (./technologyused.tex
+Chapter 6.
+) [6
+
+
+
+]
+\openout2 = `conceptualmodel.aux'.
+
+ (./conceptualmodel.tex
+Chapter 7.
+) [7
+
+
+
+]
+\openout2 = `testplan.aux'.
+
+ (./testplan.tex
+Chapter 8.
+) [8
+
+
+
+]
+\openout2 = `riskanalysis.aux'.
+
+ (./riskanalysis.tex
+Chapter 9.
+) [9
+
+
+
+]
+\openout2 = `timeline.aux'.
+
+ (./timeline.tex
+Chapter 10.
+) [10
+
+
+
+] (./master.aux (./abstract.aux) (./introduction.aux) (./requirements.aux) (./u
+secase.aux) (./activitydiagram.aux) (./architecture.aux)
+(./technologyused.aux) (./conceptualmodel.aux) (./testplan.aux)
+(./riskanalysis.aux) (./timeline.aux)) ) 
 Here is how much of TeX's memory you used:
- 3214 strings out of 492649
- 41747 string characters out of 6129622
- 102195 words of memory out of 5000000
- 7020 multiletter control sequences out of 15000+600000
- 24373 words of font info for 61 fonts, out of 8000000 for 9000
+ 3290 strings out of 492649
+ 42908 string characters out of 6129622
+ 108454 words of memory out of 5000000
+ 7031 multiletter control sequences out of 15000+600000
+ 26890 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,6n,25p,273b,198s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/201
-8/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fo
-nts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
-e1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/tim
-es/utmr8a.pfb>
-Output written on master.pdf (6 pages, 34949 bytes).
+{/usr/local/texlive/2018/texmf-dist/fon
+ts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public
+/txfonts/rtxb.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfont
+s/rtxr.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
+></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on master.pdf (15 pages, 43269 bytes).
 PDF statistics:
- 36 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
+ 70 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
