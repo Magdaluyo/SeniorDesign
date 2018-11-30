@@ -1,3 +1,16 @@
 \chapter{Technology Used and Design Rationale}
 
 \section{Description}
+In this chapter, we discuss the necessary devices and technology needed for this system and why they were chosen in our design.
+
+\section{Technology}
+The main computer of the system will be a raspberry Pi Zero W. Potential devices that can be connected to the system will be Philips Hue Lights, LED strips with RF sensors, bone conduction ear buds, and a FitBit watch. Technologies used in this system will be Bluetooth and WiFi.
+
+\section{Design Rationale}
+The main computer of this System will be the Raspberry Pi Zero W. The Raspberry Pi Zero W is a low cost IoT board with WiFi capabilities and is part of a widely used open source project. This will allow us to find solutions to various problems we may encounter in development. Furthermore, if we come up with unique issues, the community is very responsive and hopefully minimize any delays.
+
+	We want this to be an open platform that multiple types of devices can be connected to. As such we will provide high cost and low cost solutions. Philips Hue Light bulbs are popular in IoT solutions for lighting in houses. Furthermore, they have an open API which will help development be smoother. The LED strips are our answer to a low cost light solution. LEDs are cheap and could be spread out across a house with minimal extra costs.
+	
+	Furthermore, we will provide vibration solutions to the doorbell system. We will use FitBit as our high end solution which has an open API making development easy. We will be developing with a higher cost FitBit so that we can interact with a screen. For a low-cost vibration solution, we will be using bone conduction ear buds which are designed to hang around an individual’s head at all times and can be simply interacted with by using bluetooth.
+	
+	Overall, we will be experimenting with both WiFi and Bluetooth. We would like to possibly stay away from WiFi in case a low income household didn’t have a router. Both are standard forms of communication between devices and are available with our chosen devices. We will also be able to set up the Raspberry Pi Zero W with hostapd (host access point daemon) to make the board function like a router. Most likely, this will lead to more power consumption so it is not an ideal solution.

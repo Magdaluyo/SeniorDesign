@@ -1,29 +1,36 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}
-\contentsline {section}{\numberline {1.1}Motivation}{1}
-\contentsline {section}{\numberline {1.2}Solution}{1}
-\contentsline {chapter}{\numberline {2}Requirements}{2}
-\contentsline {section}{\numberline {2.1}Description}{2}
-\contentsline {section}{\numberline {2.2}Functional Requirements}{2}
-\contentsline {section}{\numberline {2.3}Non-Functional Requirements}{2}
-\contentsline {section}{\numberline {2.4}Constraints}{2}
-\contentsline {chapter}{\numberline {3}Use Case Diagram}{3}
-\contentsline {section}{\numberline {3.1}Description}{3}
-\contentsline {section}{\numberline {3.2}Functionality}{3}
-\contentsline {subsection}{\numberline {3.2.1}Power System On and Off}{3}
-\contentsline {subsection}{\numberline {3.2.2}Activate Doorbell}{3}
-\contentsline {subsection}{\numberline {3.2.3}Register Element to the System}{3}
-\contentsline {subsection}{\numberline {3.2.4}Remove Element from the System}{3}
-\contentsline {chapter}{\numberline {4}Activity Diagrams}{4}
-\contentsline {section}{\numberline {4.1}Description}{4}
-\contentsline {chapter}{\numberline {5}Architecture Diagram}{5}
-\contentsline {section}{\numberline {5.1}Description}{5}
-\contentsline {chapter}{\numberline {6}Technology Used and Design Rationale}{6}
-\contentsline {section}{\numberline {6.1}Description}{6}
-\contentsline {chapter}{\numberline {7}Conceptual Model}{7}
-\contentsline {section}{\numberline {7.1}Description}{7}
-\contentsline {chapter}{\numberline {8}Test Plan}{8}
-\contentsline {section}{\numberline {8.1}Description}{8}
-\contentsline {chapter}{\numberline {9}Risk Analysis}{9}
-\contentsline {section}{\numberline {9.1}Description}{9}
-\contentsline {chapter}{\numberline {10}Development Timeline}{10}
-\contentsline {section}{\numberline {10.1}Description}{10}
+\contentsline {section}{\numberline {1.1}Problem and Motivation}{1}
+\contentsline {section}{\numberline {1.2}Current Solutions}{1}
+\contentsline {section}{\numberline {1.3}Solution}{1}
+\contentsline {chapter}{\numberline {2}Requirements}{3}
+\contentsline {section}{\numberline {2.1}Description}{3}
+\contentsline {section}{\numberline {2.2}Functional Requirements}{3}
+\contentsline {section}{\numberline {2.3}Non-Functional Requirements}{3}
+\contentsline {section}{\numberline {2.4}Constraints}{4}
+\contentsline {chapter}{\numberline {3}Use Case Diagram}{5}
+\contentsline {section}{\numberline {3.1}Description}{5}
+\contentsline {section}{\numberline {3.2}Functionality}{6}
+\contentsline {subsection}{\numberline {3.2.1}Power System On and Off}{6}
+\contentsline {subsection}{\numberline {3.2.2}Activate Doorbell}{6}
+\contentsline {subsection}{\numberline {3.2.3}Register Element to the System}{6}
+\contentsline {subsection}{\numberline {3.2.4}Remove Element from the System}{6}
+\contentsline {chapter}{\numberline {4}Activity Diagrams}{7}
+\contentsline {section}{\numberline {4.1}Description}{7}
+\contentsline {chapter}{\numberline {5}Architecture Diagram}{9}
+\contentsline {section}{\numberline {5.1}Description}{9}
+\contentsline {chapter}{\numberline {6}Technology Used and Design Rationale}{10}
+\contentsline {section}{\numberline {6.1}Description}{10}
+\contentsline {section}{\numberline {6.2}Technology}{10}
+\contentsline {section}{\numberline {6.3}Design Rationale}{10}
+\contentsline {chapter}{\numberline {7}Conceptual Model}{12}
+\contentsline {section}{\numberline {7.1}Description}{12}
+\contentsline {chapter}{\numberline {8}Test Plan}{13}
+\contentsline {section}{\numberline {8.1}Description}{13}
+\contentsline {section}{\numberline {8.2}Unit Testing}{13}
+\contentsline {section}{\numberline {8.3}Functional Testing}{13}
+\contentsline {section}{\numberline {8.4}Component Testing}{13}
+\contentsline {section}{\numberline {8.5}System Testing}{13}
+\contentsline {chapter}{\numberline {9}Risk Analysis}{14}
+\contentsline {section}{\numberline {9.1}Description}{14}
+\contentsline {chapter}{\numberline {10}Development Timeline}{15}
+\contentsline {section}{\numberline {10.1}Description}{15}

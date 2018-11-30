@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  29 NOV 2018 19:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  29 NOV 2018 23:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -205,64 +205,87 @@ LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `bold'
 (Font)                  U/txexa/m/n --> U/txexa/bx/n on input line 129.
 LaTeX Info: Redefining \not on input line 1043.
 )
-(./master.aux (./abstract.aux) (./introduction.aux) (./requirements.aux)
-(./usecase.aux) (./activitydiagram.aux) (./architecture.aux)
-(./technologyused.aux) (./conceptualmodel.aux) (./testplan.aux)
-(./riskanalysis.aux) (./timeline.aux))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/blindtext/blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count106
+\c@Blindtext=\count107
+\c@blind@countparstart=\count108
+\blind@countxx=\count109
+\blindtext@numBlindtext=\count110
+\blind@countyy=\count111
+\c@blindlist=\count112
+\c@blindlistlevel=\count113
+\c@blindlist@level=\count114
+\blind@listitem=\count115
+\c@blind@listcount=\count116
+\c@blind@levelcount=\count117
+\blind@mathformula=\count118
+\blind@Mathformula=\count119
+\c@blind@randomcount=\count120
+\c@blind@randommax=\count121
+\c@blind@pangramcount=\count122
+\c@blind@pangrammax=\count123
+) (./master.aux
+(./abstract.aux) (./introduction.aux) (./requirements.aux) (./usecase.aux)
+(./activitydiagram.aux) (./architecture.aux) (./technologyused.aux)
+(./conceptualmodel.aux) (./testplan.aux) (./riskanalysis.aux) (./timeline.aux))
 \openout1 = `master.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 25.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 25.
-
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 24.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 24.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 25.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 25.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 24.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 24.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 25.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 25.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 24.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 24.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 25.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 25.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 24.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 24.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 25.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 24.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count106
+\scratchcounter=\count124
 \scratchdimen=\dimen114
 \scratchbox=\box28
-\nofMPsegments=\count107
-\nofMParguments=\count108
+\nofMPsegments=\count125
+\nofMParguments=\count126
 \everyMPshowfont=\toks20
-\MPscratchCnt=\count109
+\MPscratchCnt=\count127
 \MPscratchDim=\dimen115
-\MPnumerator=\count110
-\makeMPintoPDFobject=\count111
+\MPnumerator=\count128
+\makeMPintoPDFobject=\count129
 \everyMPtoPDFconversion=\toks21
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -320,22 +343,22 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+txmia on input line 26.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 25.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 26.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 25.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 26.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 25.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 26.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 25.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
@@ -354,54 +377,85 @@ File: utxsyc.fd 2000/12/15 v3.1
  [4
 
 
-] (./master.lof)
+] [5] (./master.lof)
 \tf@lof=\write4
 \openout4 = `master.lof'.
 
- [5
+ [6
+
+] (./master.lot)
+\tf@lot=\write5
+\openout5 = `master.lot'.
+
+ [7
 
 ]
 \openout2 = `introduction.aux'.
 
- (./introduction.tex
+
+(./introduction.tex
 Chapter 1.
 ) [1
 
 
 
-]
+] [2]
 \openout2 = `requirements.aux'.
 
  (./requirements.tex
 Chapter 2.
-) [2
+LaTeX Font Info:    Try loading font information for OMS+txr on input line 8.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/omstxr.fd
+File: omstxr.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10> not available
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 8.
+ [3
 
 
 
-]
+]) [4]
 \openout2 = `usecase.aux'.
 
- (./usecase.tex
+
+(./usecase.tex
 Chapter 3.
-) [3
+<UseCase.png, id=41, 643.40375pt x 553.06625pt>
+File: UseCase.png Graphic file (type png)
+<use UseCase.png>
+Package pdftex.def Info: UseCase.png  used on input line 7.
+(pdftex.def)             Requested size: 375.80544pt x 323.04877pt.
+[5
 
 
 
-]
+ <./UseCase.png>]) [6]
 \openout2 = `activitydiagram.aux'.
 
  (./activitydiagram.tex
 Chapter 4.
-) [4
+<ResidentActivityDiagram.png, id=52, 948.54375pt x 724.7075pt>
+File: ResidentActivityDiagram.png Graphic file (type png)
+<use ResidentActivityDiagram.png>
+Package pdftex.def Info: ResidentActivityDiagram.png  used on input line 7.
+(pdftex.def)             Requested size: 422.77664pt x 323.00803pt.
+[7
 
 
 
-]
+ <./ResidentActivityDiagram.png>]
+<VisitorActivityDiagram.png, id=57, 928.46875pt x 614.295pt>
+File: VisitorActivityDiagram.png Graphic file (type png)
+<use VisitorActivityDiagram.png>
+Package pdftex.def Info: VisitorActivityDiagram.png  used on input line 16.
+(pdftex.def)             Requested size: 422.77664pt x 279.72025pt.
+) [8 <./VisitorActivityDiagram.png>]
 \openout2 = `architecture.aux'.
 
- (./architecture.tex
+
+(./architecture.tex
 Chapter 5.
-) [5
+) [9
 
 
 
@@ -410,25 +464,30 @@ Chapter 5.
 
  (./technologyused.tex
 Chapter 6.
-) [6
+) [10
 
 
 
-]
+] [11]
 \openout2 = `conceptualmodel.aux'.
 
  (./conceptualmodel.tex
 Chapter 7.
-) [7
+<ConceptualModel.png, id=71, 1039.885pt x 837.1275pt>
+File: ConceptualModel.png Graphic file (type png)
+<use ConceptualModel.png>
+Package pdftex.def Info: ConceptualModel.png  used on input line 7.
+(pdftex.def)             Requested size: 375.80544pt x 302.52806pt.
+) [12
 
 
 
-]
+ <./ConceptualModel.png>]
 \openout2 = `testplan.aux'.
 
  (./testplan.tex
 Chapter 8.
-) [8
+) [13
 
 
 
@@ -437,7 +496,12 @@ Chapter 8.
 
  (./riskanalysis.tex
 Chapter 9.
-) [9
+
+Overfull \hbox (7.18498pt too wide) in paragraph at lines 5--12
+[][] 
+ []
+
+) [14
 
 
 
@@ -446,31 +510,38 @@ Chapter 9.
 
  (./timeline.tex
 Chapter 10.
-) [10
+<DevelopmentTimeline.png, id=83, 1132.23pt x 403.5075pt>
+File: DevelopmentTimeline.png Graphic file (type png)
+<use DevelopmentTimeline.png>
+Package pdftex.def Info: DevelopmentTimeline.png  used on input line 6.
+(pdftex.def)             Requested size: 469.75502pt x 167.4094pt.
+) [15
 
 
 
-] (./master.aux (./abstract.aux) (./introduction.aux) (./requirements.aux) (./u
-secase.aux) (./activitydiagram.aux) (./architecture.aux)
-(./technologyused.aux) (./conceptualmodel.aux) (./testplan.aux)
-(./riskanalysis.aux) (./timeline.aux)) ) 
+ <./DevelopmentTimeline.png>] (./master.aux (./abstract.aux)
+(./introduction.aux) (./requirements.aux) (./usecase.aux)
+(./activitydiagram.aux) (./architecture.aux) (./technologyused.aux)
+(./conceptualmodel.aux) (./testplan.aux) (./riskanalysis.aux) (./timeline.aux))
+ ) 
 Here is how much of TeX's memory you used:
- 3290 strings out of 492649
- 42908 string characters out of 6129622
- 108454 words of memory out of 5000000
- 7031 multiletter control sequences out of 15000+600000
+ 3520 strings out of 492649
+ 46908 string characters out of 6129622
+ 116164 words of memory out of 5000000
+ 7241 multiletter control sequences out of 15000+600000
  26890 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,25p,273b,198s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fon
-ts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public
-/txfonts/rtxb.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfont
-s/rtxr.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
-></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on master.pdf (15 pages, 41694 bytes).
+ 41i,13n,25p,1329b,283s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2018/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2018/texmf-dis
+t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
+pe1/urw/times/utmr8a.pfb>
+Output written on master.pdf (22 pages, 298243 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
+ 107 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
