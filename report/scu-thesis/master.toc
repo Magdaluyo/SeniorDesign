@@ -9,7 +9,7 @@
 \contentsline {chapter}{\numberline {3}Use Case Diagram}{3}
 \contentsline {section}{\numberline {3.1}Description}{3}
 \contentsline {section}{\numberline {3.2}Functionality}{3}
-\contentsline {subsection}{\numberline {3.2.1}Power System on and off}{3}
+\contentsline {subsection}{\numberline {3.2.1}Power System On and Off}{3}
 \contentsline {subsection}{\numberline {3.2.2}Activate Doorbell}{3}
 \contentsline {subsection}{\numberline {3.2.3}Register Element to the System}{3}
 \contentsline {subsection}{\numberline {3.2.4}Remove Element from the System}{3}
