@@ -1,16 +1,50 @@
 \chapter{Technology Used and Design Rationale}
 
 \section{Description}
-In this chapter, we discuss the necessary devices and technology needed for this system and why they were chosen in our design.
+In this chapter, we discuss the necessary devices and technology needed for this system and our reasoning for their choice in our design.
 
-\section{Technology}
-The main computer of the system will be a raspberry Pi Zero W, a simple affordable IoT board with WiFi and Bluetooth capabilities. Potential devices that can be connected to the system will be Philips Hue Lights, a light system with color changing lights set by a smart phone or other peripherals; LED strips with RF sensors, working similar to Philips Hue Lights but affordable; bone conduction ear buds; and a FitBit watch. Technologies used in this system will be Bluetooth and WiFi.
+\section{Communication Protocols}
+In the IoT world, there are a few communication protocols that we could use. In the following subsections, we go over the benefits and disadvantages of using each protocol.
 
-\section{Design Rationale}
-The main computer of this System will be the Raspberry Pi Zero W. The Raspberry Pi Zero W is a low cost IoT board with WiFi capabilities and is part of a widely used open source project. This will allow us to find solutions to various problems we may encounter in development. Furthermore, if we come up with unique issues, the community is very responsive and hopefully minimize any delays.
+\subsection{802.11 (Wi-Fi)}
+802.11 is a common protocol with 802.11 access points present in many places today. It has high bandwidth at 11 Mbps and is supported by many devices. It is powerful and has moderate range between 30 and 100 meters. Unfortunately, this is a high power protocol which is not ideal for components in our system that will run on battery \cite{website:bluetooth-vs-wifi}.
 
-	We want this to be an open platform that multiple types of devices can be connected to. As such we will provide high cost and low cost solutions. Philips Hue Light bulbs are popular in IoT solutions for lighting in houses. Furthermore, they have an open API which will help development be smoother. The LED strips are our answer to a low cost light solution. LEDs are cheap and could be spread out across a house with minimal extra costs.
-	
-	Furthermore, we will provide vibration solutions to the doorbell system. We will use FitBit as our high end solution which has an open API making development easy. We will be developing with a higher cost FitBit so that we can interact with a screen. For a low-cost vibration solution, we will be using bone conduction ear buds which are designed to hang around an individual’s head at all times and can be simply interacted with by using bluetooth. Bone conduction can still produce sound for those that damage is in the outer or middle ear canal. Otherwise, the vibration can still be used to alert individuals.
-	
-	Overall, we will be experimenting with both WiFi and Bluetooth. We would like to possibly stay away from WiFi in case a low income household didn’t have a router. Both are standard forms of communication between devices and are available with our chosen devices. We will also be able to set up the Raspberry Pi Zero W with hostapd (host access point daemon) to make the board function like a router. Most likely, this will lead to more power consumption so it is not an ideal solution.
+    In our design, we decided to use this protocol in only broadcasting to devices connected to our system that will relay notifications to the user. Most likely these devices will have consistent power and will already be connected to the user’s WiFi network.
+
+\subsection{802.15.1 (Bluetooth)}
+802.15.1 is another common protocol. Many devices come with bluetooth to provide low range, moderate bandwidth connections. The bandwidth is moderate at 800 kbps while also providing moderate power consumption. The range is low at about 5 to 30 meters which is not useful if components of our system are placed far away from our central gateway. 
+
+    In our design, we decided to use this protocol in broadcasting to devices connected to our system like 802.11 and for connecting a smartphone application to the gateway. The smartphone application would allow an average user to control the system as necessary for themselves.
+
+\subsection{802.15.4 (Zigbee)}
+802.15.4 is more commonly use in IoT applications. It is useful for it’s low power consumption and far range (about 100 meters). It has low bandwidth but that is not a problem for most IoT applications that may only require simple relays of information between devices. Most development uses Zigbee, a application layer protocol, that provides security and optimization for home automation.
+ 
+    In our design, we decided to only go with 802.15.4. Development with Zigbee is covered under the Zigbee Alliance which would require us applying into the alliance. Considering the scope of this project, this seemed like an unnecessary delay. Furthermore, we don’t need the benefits of Zigbee to show a proof of concept. We found that 802.15.4 would be best in broadcasting between the doorbell and the gateway. This provides good range and allows the doorbell to consume less power than other communication protocols.
+
+\section{Hardware}
+Our system consists of edge devices and a gateway. The edge devices are the doorbell and the devices relaying notifications to the user. The gateway is made up of a Raspberry Pi Zero W and an XBee. The gateway will receive a notification from the doorbell and will notify the other devices through a home network.
+
+\subsection{Gateway}
+The gateway consists of a Raspberry Pi Zero W and an XBee. XBee is a programmable module from DigiKey. The S1 variant can use either 802.15.4 or Zigbee depending on the firmware flashed. Furthermore, it uses serial Tx and Rx to communicate so it can be added easily to any module. The Raspberry Pi Zero W was favorable to us as it would make our development easier being a familiar Unix-based system and having a vast open-source community. Furthermore, it is low cost and the W variant comes with Bluetooth and WiFi. Using these protocols, we can communicate to various devices connected to a home network through an access point.
+
+\subsection{Doorbell}
+The doorbell was originally intended to be Texas Instruments’ SensorTag C2650. The SensorTag has the option of either using Bluetooth or 802.15.4, which can be configured by flashing different firmware. SensorTag comes with many sensors which we thought would be great for us to experiment with such as the motion sensor. It was also advertised to last for two years using a lithium coin battery. This is a huge advantage as we don’t want users to be changing the battery often for the device.
+
+    We eventually decided it was best to move away from SensorTag due to issues covered in a later chapter. Our solution became to use two XBees to communicate with each other. We knew that two XBees would work so long as they had the same parameters flashed. To accomplish this, we decided to use Arduino as the main processor for the doorbell. We used Arduino Uno for prototyping but Arduino Nano would be the best option in order to maintain a low power solution. Using an Arduino shield, interfacing with the XBee was simple using an XBee library from DigiKey.
+    
+    For the doorbell, we also wanted a visitor to have feedback that the doorbell was pressed. A common occurrence in pressing a doorbell is hearing the doorbell chime, informing the visitor that the doorbell is working and has sent a notification to the resident. We decided that an LED pulse would accomplish this same effect. Using an Illuminated Momentary Pushbutton from Adafruit, we were able to simply accomplish this in our doorbell.
+
+\subsection{Conneced Devices}
+A Philips Hue LED strip was used to test the implementation. Although expensive, Philips Hue has well-designed devices with an open API to make it easy to integrate into the system. Since this is just a proof of concept, showing the system working was a larger concern.
+
+\section{Software Development}
+Software consisted of C/C++, Python and Node-RED. The software was used in different ways in the system and is described in more detail in the following subsections.
+
+\subsection{Doorbell Software}
+The doorbell software is written in Arduino code which is based off of C/C++. The Arduino board can communicate to the XBee using the already available serial library. Since Arduino runs code continuously in a loop, the code waits for a trigger from the doorbell press. On press, the LED pulses to notify the visitor that the button is broadcasting. The XBee will send a broadcast. Any XBee with the same parameters in range will receive the packet.
+
+\subsection{Gateway Software}
+The gateway’s software comprised mostly of Node-RED. Created by IBM for IoT applications and written in Javascript, Node-RED uses flow programming to trigger nodes. Each node is a block that runs a process when triggered and provides an output that can trigger another node or end the flow. Using a ‘start-up-trigger’ node, the application will immediately start the flow when the Node-RED server starts. The flow will then wait to receive serial output from the XBee through the Pi’s Rx pin. When the node returns, the flow will split and notify all of the connected devices in the house each with their own respective nodes. To avoid unnecessary spawning of node processes and causing undefined behavior from doorbell spam, the flow waits for all nodes of notification devices to return. With the ‘wait-paths’ node, once all nodes return, the flow is repeated.
+
+\subsection{Broadcasting Software}
+With Raspberry Pi’s versatility as a Unix-based system, any programming language can be used to activate the connected devices. In our testing, the APIs were available in Python. With Node-RED, any script can be run using an ‘exec’ node. Furthermore, since Node-RED is open source, anyone can create nodes for use by creating a .json, .js, and .html file. Creating nodes are simple. With some technical knowledge, a growing network of nodes could be created for this application and may already be available for many devices.
