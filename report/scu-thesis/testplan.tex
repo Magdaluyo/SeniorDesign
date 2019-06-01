@@ -1,16 +1,16 @@
 \chapter{Test Plan}
 
 \section{Description}
-This chapter discusses methods in which we plan to test our system from unit testing to system testing. We will spend most of our time testing the system in small pieces. We will have to make sure that each type of device can be registered with the system and function.
+The following subsections are the testing procedures we went through to ensure success of the system.
 
 \section{Unit Testing}
-We will be testing our system in small individual processes. These would be things such as if an individual script performs properly in our system. We would also have to verify that devices work as we expected.
+Unit testing is performed to verify that a small piece of code is performing as desired. Before using Node-RED to build the flow, we tested each of the potential functions of our system. Some examples include, making sure communication between the doorbell and gateway works as intended, writing small scripts to test communication to devices in a home network, and making sure each device functions as intended.
 
 \section{Functional Testing}
-We will be testing our system in small units. This will have to do with verifying that a device can be activated to notify the Resident actor or that a button triggers a software action properly.
+Functional testing is to check the performance of multiple units as one functional unit. This was mostly just in our Node-RED application. We had to make sure that each unit could be integrated into a node and be triggered and output properly.
 
 \section{Component Testing}
-We will be testing our system by use cases. We expect to put together multiple functional components such as a device turning on and a button interrupt triggering the device.
+Component testing is to check multiple functional units working together. We made sure that the doorbell will send a trigger as expected. We made sure that a flow could function by itself and not need any user actions to set up.
 
 \section{System Testing}
-Finally, we will test the system as a whole. We would set it up in a house and verify that all the use cases perform properly. We will limit testing to just one device and once all of those are successful, move on to testing multiple devices at one time.
+System Testing tests all the components together. In this step, all the communications between the components (doorbell, gateway, and connected devices) came together. We had to make sure that each step of the activity diagrams could be performed.

@@ -4,6 +4,7 @@
 \usepackage{natbib}	% for better citation styles
 \usepackage{txfonts}	% for using the Times-Roman font
 \usepackage{blindtext}
+\usepackage[toc,page]{appendix}
 
 % These must be set first ... the rest of the thesis commands rely on them.
 
@@ -32,7 +33,7 @@
 
 \tableofcontents
 \listoffigures
-\listoftables
+%\listoftables
 
 \mainmatter
 \include{introduction}
@@ -41,13 +42,22 @@
 \include{activitydiagram}
 \include{architecture}
 \include{technologyused}
-\include{conceptualmodel}
+%\include{conceptualmodel}
 \include{testplan}
-\include{riskanalysis}
-\include{timeline}
-
+%\include{riskanalysis}
+%\include{timeline}
+\include{future}
+\include{lessons}
+\include{obstacles}
+\include{conclusion}
 
 \backmatter
 \bibliographystyle{plain}
 \bibliography{sources}
+
+\begin{appendix}
+%\include{usermanual}
+%\include{sourcecode}
+\end{appendix}
+
 \end{document}
