@@ -7,10 +7,10 @@ The following subsections are the testing procedures we went through to ensure s
 Unit testing is performed to verify that a small piece of code is performing as desired. Before using Node-RED to build the flow, we tested each of the potential functions of our system. Some examples include, making sure communication between the doorbell and gateway works as intended, writing small scripts to test communication to devices in a home network, and making sure each device functions as intended.
 
 \section{Functional Testing}
-Functional testing is to check the performance of multiple units as one functional unit. This was mostly just in our Node-RED application. We had to make sure that each unit could be integrated into a node and be triggered and output properly.
+Functional testing is to check the performance of multiple units as one functional unit. This was mostly just in our Node-RED application. We had to make sure that each unit could be integrated into a node and be triggered and output properly. This proved to have some difficulties due to unfamiliarity with Nod-RED's behavior.
 
 \section{Component Testing}
-Component testing is to check multiple functional units working together. We made sure that the doorbell will send a trigger as expected. We made sure that a flow could function by itself and not need any user actions to set up.
+Component testing is to check multiple functional units working together. We made sure that the doorbell will send a trigger as expected. Furthermore, we made sure that a flow could function by itself and not need any user actions to set up. The flow of Node-RED should return back to its waiting state after devices have notified the user.
 
 \section{System Testing}
-System Testing tests all the components together. In this step, all the communications between the components (doorbell, gateway, and connected devices) came together. We had to make sure that each step of the activity diagrams could be performed.
+System Testing tests all the components together. In this step, all the communications between the components (doorbell, gateway, and connected devices) came together. We had to make sure that each step of the activity diagrams could be performed and all of our use cases were implemented. The system had to also perform for long periods of time. We left if on for a few days and verified that the system performed appropriately.
