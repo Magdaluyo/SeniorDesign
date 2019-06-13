@@ -1,0 +1,137 @@
+[
+    {
+        "id": "f5bd703e.670cf",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "77e6b858.296d78",
+        "type": "start-up-trigger",
+        "z": "f5bd703e.670cf",
+        "x": 120,
+        "y": 160,
+        "wires": [
+            [
+                "d38a81cd.93dc4"
+            ]
+        ]
+    },
+    {
+        "id": "d38a81cd.93dc4",
+        "type": "exec",
+        "z": "f5bd703e.670cf",
+        "command": "python3 /home/pi/xbee_test.py",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "",
+        "x": 370,
+        "y": 220,
+        "wires": [
+            [
+                "8f3679ef.1c53d8",
+                "70a54f5c.fed12"
+            ],
+            [],
+            [
+                "ca33c4dc.f52ab8"
+            ]
+        ]
+    },
+    {
+        "id": "ca33c4dc.f52ab8",
+        "type": "debug",
+        "z": "f5bd703e.670cf",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 670,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "8f3679ef.1c53d8",
+        "type": "exec",
+        "z": "f5bd703e.670cf",
+        "command": "python3 /home/pi/hue_test.py",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "",
+        "x": 690,
+        "y": 100,
+        "wires": [
+            [],
+            [],
+            [
+                "740086bb.85aed8"
+            ]
+        ]
+    },
+    {
+        "id": "740086bb.85aed8",
+        "type": "debug",
+        "z": "f5bd703e.670cf",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 870,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "b9ab7ca2.f8883",
+        "type": "inject",
+        "z": "f5bd703e.670cf",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 360,
+        "y": 120,
+        "wires": [
+            [
+                "8f3679ef.1c53d8"
+            ]
+        ]
+    },
+    {
+        "id": "70a54f5c.fed12",
+        "type": "delay",
+        "z": "f5bd703e.670cf",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "50",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 370,
+        "y": 320,
+        "wires": [
+            [
+                "d38a81cd.93dc4"
+            ]
+        ]
+    }
+]
